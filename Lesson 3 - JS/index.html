@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JS</title>
+</head>
+<body>
+    <p>Работа JavaScript через HTML завершена</p>
+
+    <script> language="JavaScript";
+        function sum(a, b) {
+            return a + b;
+        }
+        let b=parseInt(prompt("Введите число 1:"));
+        let c=parseInt(prompt("Введите число 2:"));
+        alert(sum(b, c));
+
+        let n=prompt("Введите Ваше имя:");
+        let a=parseInt(prompt("Введите Ваш возраст:"));
+        alert(`Привет, ${n}, через 5 лет тебе будет ${a + 5} лет.`);
+
+    </script>
+
+    <p>Перезагрузите страницу для повторения...</p>
+</body>
+</html>
+
+<!-- let / задание новой переменной (динамическая типизация)
+    let name = "Саша";
+    let a = 5;
+
+Типы данных:
+    - строки:
+        cтрока задаётся через '', "", ``
+        при задании через обратные кавычки ``: alert(`Привет, {name}!`); / Привет, Саша!
+    - числа
+    - Infinity - математическая бесконечность / alert(5/0);
+    - NaN - вычислительная ошибка / alert("Стёпа" / 5);
+    - булевый (логический) тип
+        let why = true;
+        let compare = 5>2;
+        alert(compare) / true;
+    - null
+        let age = null;
+        alert(age); / undefined - значение не задано
+Оператор typeof показывает тип переменной
+
+Взаимодействие:
+    - alert - окно предупреждения
+    - promt - ввод данных
+        let test = promt("Test");
+    - confirm - выбор Да или Нет
+        let right = confirm("Быть или не быть?"); / буллево значение
+
+Арифметика:
+    +, -, *, /, % (остаток от деления), ** (возведение в степень)
+    - перевод строки в число:
+        let number = parseInt(promt("Введите число:"));
+        alert(number + 1);
+    - унарный плюс:
+        let x = 1;
+        alert(+x); / 1
+        преобразует нечисла в числа:
+            alert(+true); / 1
+            alert(+""); / 0
+
+Условное ветвление:
+    - if:
+        if (y == 5) {
+            alert("ok");
+        } else {
+            alert("Нет");
+        }
+    - ?:
+        let access = (age > 18) ? true : false;
+
+Логические операторы:
+    || (ИЛИ)
+    && (И)
+    ! (НЕ)
+
+Операторы присваивания:
+    х += y => x = x + y;
+    и т.д. 
+
+Сравнение:
+    >, <, >=, <=, == (is equal), === (value and type are equal), != (not equal)
+
+Циклы:
+    - while:
+        let i = 0;
+        while (i < 3) {
+            alert(i);
+            i++;
+        }
+    - do-while:
+        let i = 0;
+        do {
+            alert(i);
+            i++;
+        } while (i < 3);
+    - for: / используется тогда, когда количество итераций известно заранее
+        for (let i = 0; i < 3; i++) {
+            alert (i)
+        }
+
+switch:
+    let a = 1;
+    switch (a) {
+        case 1:
+            alert("normal")
+            break;
+        case 2:
+            alert("too many")
+            break;
+        default:
+            alert("Not")
+    }
+
+Функции:
+    function showMessage() {
+        alert("Привет!")
+    }
+    showMessage()
+    showMessage() -->
