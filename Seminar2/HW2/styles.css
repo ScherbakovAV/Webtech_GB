@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Arkhip';
+	src: url('fonts/arkhip.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/arkhip.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/arkhip.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/arkhip.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/arkhip.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/arkhip.svg#arkhip') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+html{
+    background-color: rgb(235, 235, 235);
+}
+body{
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgb(244, 252, 214);
+    padding: 20px 30px 10px 30px;
+    border: 2px solid grey
+}
+img{
+    border: 1px solid grey
+}
+.images{
+    text-align: center;
+}
+h1{
+    font-family: 'Arkhip', sans-serif;
+    color: crimson;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgb(187, 186, 186);
+}
+h2{
+    font-family: 'Arkhip', sans-serif;
+    color: coral;
+    text-align: center;
+}
+p, li{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(59, 97, 99);
+}
+.bigtxt{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+#end_link{
+    color: rgb(124, 124, 124);
+    font-size: 12px;
+}
+a:hover{
+    color: red;
+}
