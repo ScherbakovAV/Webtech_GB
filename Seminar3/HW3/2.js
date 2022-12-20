@@ -3,14 +3,13 @@
 Cоздать функцию greeting, которая принимает имя и выводит приветствие, используя переданное имя, в консоль.
 Необходимо у пользователя запросить имя и вызвать функцию greeting, передав туда данное значение. */
 
-function Greeting(userName) {
+function greeting(userName) {
     if (userName != "") {
         console.log(`Приветствую, ${userName}!`);
     } else {
         console.log(`Приветствую Вас, аноним!`);
     }
-    
 }
 
-yourName = prompt("Как Вас зовут?");
-Greeting(yourName);
+const yourName = prompt("Как Вас зовут?");
+greeting(yourName);
