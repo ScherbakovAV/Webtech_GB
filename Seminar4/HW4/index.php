@@ -115,15 +115,16 @@ $works = [
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
           	<?php echo $works[$i]["beginDate"] ?> - 
             <?php if ($works[$i]["endDate"] != 'current') {
-                	echo $works[$i]["endDate"];
+              echo $works[$i]["endDate"];
             } else { ?>
-                	<span class="w3-tag w3-teal w3-round">Текущее место работы</span>
+              <span class="w3-tag w3-teal w3-round">Текущее место работы</span>
             <?php } ?>
-            </h6>
+          </h6>
           <p><?php echo $works[$i]["experience"] ?></p>
           <hr>
         </div>
         <?php } ?>
+      </div>
         
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование</h2>
